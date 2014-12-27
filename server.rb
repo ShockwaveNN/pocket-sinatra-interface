@@ -2,9 +2,9 @@ require 'sinatra'
 require 'sinatra/config_file'
 require 'haml'
 require 'json'
+require 'pocket'
 config_file 'config.yaml'
 
-require './lib/pocket.rb'
 
 enable :sessions
 
