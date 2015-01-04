@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
 gem 'haml'
-gem 'pocket-ruby'
+gem 'pocket-ruby', '>=0.0.5'
 gem 'sinatra'
 gem 'sinatra-contrib'
