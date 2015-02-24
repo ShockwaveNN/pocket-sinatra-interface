@@ -27,7 +27,7 @@
  
 function loadJQuery(){
   script = document.createElement('script');
-  script.setAttribute('src', 'http://code.jquery.com/jquery-latest.min.js');
+  script.setAttribute('src', '//code.jquery.com/jquery-latest.min.js');
   script.setAttribute('type', 'text/javascript');
   script.onload = loadSaveAs;
   document.getElementsByTagName('head')[0].appendChild(script);
