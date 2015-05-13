@@ -76,7 +76,7 @@ post "/upload" do
   File.open(filename, "w") do |f|
     f.write(params['myfile'][:tempfile].read)
   end
-  json_content = JSON.parse( IO.read(filename))
+  json_content = JSON.parse( IO.read(filename).gsub("\uFEFF", ''))
   urls = []
   json_content.each do |cur|
     urls << cur['url']
