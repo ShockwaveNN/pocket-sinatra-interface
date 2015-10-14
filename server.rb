@@ -13,6 +13,12 @@ def callback_url
   "#{request.base_url}/oauth/callback"
 end
 
+# Check if user are logged in pocket
+# @return [True, False] result
+def logged_in?
+  session[:access_token].nil?
+end
+
 Pocket.configure do |config|
   config.consumer_key = settings.consumer_key
 end
@@ -66,7 +72,11 @@ get '/add' do
 end
 
 get "/upload" do
-  haml :upload
+  if logged_in?
+    haml :no_key
+  else
+    haml :upload
+  end
 end
 
 # Handle POST-request (Receive and save the uploaded file)
