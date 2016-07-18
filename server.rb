@@ -2,7 +2,7 @@ require 'sinatra'
 require 'sinatra/config_file'
 require 'haml'
 require 'json'
-require 'pocket'
+require 'pocket-ruby'
 config_file 'config.yaml'
 
 
@@ -79,6 +79,10 @@ get "/upload" do
   end
 end
 
+get '/upload/incorrect-json' do
+  haml :incorrect_json_format
+end
+
 # Handle POST-request (Receive and save the uploaded file)
 post "/upload" do
   client = Pocket.client(:access_token => session[:access_token])
@@ -86,7 +90,11 @@ post "/upload" do
   File.open(filename, "w") do |f|
     f.write(params['myfile'][:tempfile].read)
   end
-  json_content = JSON.parse( IO.read(filename).gsub("\uFEFF", ''))
+  begin
+    json_content = JSON.parse( File.read(filename, :encoding => 'bom|utf-8'))
+  rescue JSON::ParserError
+    redirect 'upload/incorrect-json'
+  end
   urls = []
   json_content.each do |cur|
     urls << cur['url']
