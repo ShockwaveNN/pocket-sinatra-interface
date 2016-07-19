@@ -5,5 +5,5 @@
       %input(type='file' name='myfile')
       %br
       %input(type='submit' value='Upload!')
-    = (File.read "feedly_export_saved_for_later.js").gsub("\n", '<br>')
+    = (File.read "app/assets/feedly_export_saved_for_later.js").gsub("\n", '<br>')
 

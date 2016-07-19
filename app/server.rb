@@ -85,7 +85,7 @@ end
 # Handle POST-request (Receive and save the uploaded file)
 post '/upload' do
   client = Pocket.client(access_token: session[:access_token])
-  filename = 'uploads/' + params['myfile'][:filename]
+  filename = 'app/uploads/' + params['myfile'][:filename]
   File.open(filename, 'w') do |f|
     f.write(params['myfile'][:tempfile].read)
   end
