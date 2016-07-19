@@ -34,3 +34,4 @@ build/
 .rvmrc
 
 config.yaml
+.idea
