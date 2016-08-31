@@ -1,6 +1,6 @@
 require 'rspec/core/rake_task'
 
-task :default => :test
+task default: :test
 
 desc 'Tests'
 task :test do
