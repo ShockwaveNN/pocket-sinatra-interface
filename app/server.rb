@@ -67,7 +67,6 @@ end
 get '/add' do
   client = Pocket.client(access_token: session[:access_token])
   info = client.add url: 'http://getpocket.com'
-  sleep 1 # may fix blocking access to api
   "<pre>#{info}</pre>"
 end
 
