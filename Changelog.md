@@ -1,5 +1,8 @@
 # Change log
 
+## unreleased (master)
+* Reverse sort articles list, better for pocket order
+
 ## 0.2
 * Add warning if not logged-in
 * Add changelog
