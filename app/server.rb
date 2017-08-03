@@ -3,7 +3,7 @@ require 'sinatra/config_file'
 require 'haml'
 require 'json'
 require 'pocket-ruby'
-config_file 'config.yaml'
+config_file 'config.yml'
 
 enable :sessions
 
