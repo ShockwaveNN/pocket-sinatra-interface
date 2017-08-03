@@ -98,6 +98,7 @@ post '/upload' do
   json_content.each do |cur|
     urls << cur['url']
   end
+  urls.reverse!
   added_url_data = ''
   urls.each do |cur_url|
     info = client.add url: cur_url
