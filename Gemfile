@@ -2,8 +2,15 @@ source 'http://rubygems.org'
 
 gem 'haml'
 gem 'pocket-ruby', '>=0.0.5'
-gem 'rake'
-gem 'rspec'
-gem 'rubocop', require: false
 gem 'sinatra'
 gem 'sinatra-contrib'
+
+group :development do
+  gem 'overcommit', require: false
+  gem 'rubocop', require: false
+end
+
+group :test do
+  gem 'rake', require: false
+  gem 'rspec', require: false
+end
