@@ -34,7 +34,7 @@ function loadJQuery() {
 
 function loadSaveAs() {
     saveAsScript = document.createElement('script');
-    saveAsScript.setAttribute('src', 'https://rawgit.com/eligrey/FileSaver.js/master/FileSaver.js');
+    saveAsScript.setAttribute('src', 'https://rawgit.com/eligrey/FileSaver.js/1.3.4/FileSaver.js');
     saveAsScript.setAttribute('type', 'text/javascript');
     saveAsScript.onload = saveToFile;
     document.getElementsByTagName('head')[0].appendChild(saveAsScript);
