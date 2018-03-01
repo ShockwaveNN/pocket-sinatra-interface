@@ -34,6 +34,8 @@ GEM
     rack (2.0.3)
     rack-protection (2.0.0)
       rack
+    rack-test (0.8.2)
+      rack (>= 1.0, < 3)
     rainbow (2.2.2)
       rake
     rake (12.3.0)
@@ -81,6 +83,7 @@ DEPENDENCIES
   haml
   overcommit
   pocket-ruby (>= 0.0.5)
+  rack-test
   rake
   rspec
   rubocop
@@ -88,4 +91,4 @@ DEPENDENCIES
   sinatra-contrib
 
 BUNDLED WITH
-   1.16.0
+   1.16.1

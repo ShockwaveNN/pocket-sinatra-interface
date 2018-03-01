@@ -11,6 +11,7 @@ group :development do
 end
 
 group :test do
+  gem 'rack-test'
   gem 'rake', require: false
   gem 'rspec', require: false
 end
