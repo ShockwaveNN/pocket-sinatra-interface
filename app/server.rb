@@ -4,6 +4,7 @@ require 'haml'
 require 'json'
 require 'pocket-ruby'
 config_file 'config.yml'
+require_relative 'helpers/application_helper'
 
 enable :sessions
 
@@ -99,8 +100,9 @@ post '/upload' do
     urls << cur['url']
   end
   urls.reverse!
+  safe_links = cleanup_links_list(urls)
   added_url_data = ''
-  urls.each do |cur_url|
+  safe_links.each do |cur_url|
     info = client.add url: cur_url
     added_url_data += "<p>Added: #{info}</p>"
   end

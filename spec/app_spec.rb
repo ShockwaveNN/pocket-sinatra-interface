@@ -1,4 +1,4 @@
-require File.expand_path '../spec_helper.rb', __FILE__
+require 'spec_helper'
 
 describe 'My Sinatra Application' do
   it 'should allow accessing the home page' do
