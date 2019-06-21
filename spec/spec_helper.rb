@@ -5,7 +5,7 @@ require 'rspec'
 
 ENV['RACK_ENV'] = 'test'
 
-require File.expand_path '../../app/server.rb', __FILE__
+require File.expand_path '../app/server.rb', __dir__
 
 module RSpecMixin
   include Rack::Test::Methods
