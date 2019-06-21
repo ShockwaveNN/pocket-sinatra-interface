@@ -11,17 +11,3 @@
 Style/ExpandPathArguments:
   Exclude:
     - 'spec/spec_helper.rb'
-
-# Offense count: 7
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle.
-# SupportedStyles: always, never
-Style/FrozenStringLiteralComment:
-  Exclude:
-    - 'Gemfile'
-    - 'Rakefile'
-    - 'app/helpers/application_helper.rb'
-    - 'app/server.rb'
-    - 'spec/app_spec.rb'
-    - 'spec/helpers/application_helper_spec.rb'
-    - 'spec/spec_helper.rb'
