@@ -16,7 +16,7 @@ GEM
       tilt
     hashie (3.5.7)
     iniparse (1.4.4)
-    jaro_winkler (1.5.2)
+    jaro_winkler (1.5.3)
     multi_json (1.13.1)
     multipart-post (2.0.0)
     mustermann (1.0.3)
@@ -51,7 +51,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.8.0)
     rspec-support (3.8.0)
-    rubocop (0.71.0)
+    rubocop (0.72.0)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
       parser (>= 2.6)
