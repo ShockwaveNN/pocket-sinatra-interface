@@ -25,3 +25,5 @@ jobs:
         bundle exec rake
     - name: Send test coverage report to codecov.io
       uses: codecov/codecov-action@v1
+      with:
+        file: ./coverage/.resultset.json
