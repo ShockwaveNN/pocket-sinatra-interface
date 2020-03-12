@@ -6,8 +6,6 @@ task default: :test
 
 desc 'Tests'
 task :test do
-  RSpec::Core::RakeTask.new(:spec) do |t|
-    t.pattern = 'spec/*_spec.rb'
-  end
+  RSpec::Core::RakeTask.new(:spec)
   Rake::Task['spec'].execute
 end
