@@ -1,19 +1,11 @@
 name: Ruby
-
-on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
-
+on: [push]
 jobs:
   build:
-
     runs-on: ubuntu-latest
     strategy:
       matrix:
         ruby: [2.4, 2.5, 2.6, 2.7, head]
-
     steps:
     - uses: actions/checkout@v2
     - name: Set up Ruby ${{ matrix.ruby }}
