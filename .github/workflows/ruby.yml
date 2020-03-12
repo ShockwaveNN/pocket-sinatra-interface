@@ -23,3 +23,5 @@ jobs:
         bundle config set without 'development'
         bundle install --jobs 4 --retry 3
         bundle exec rake
+    - name: Send test coverage report to codecov.io
+      uses: codecov/codecov-action@v1
