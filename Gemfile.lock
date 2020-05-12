@@ -29,7 +29,7 @@ GEM
       faraday_middleware (~> 0.9)
       hashie (>= 0.4.0)
       multi_json (~> 1.0, >= 1.0.3)
-    rack (2.0.8)
+    rack (2.2.2)
     rack-protection (2.0.8.1)
       rack
     rack-test (1.1.0)
