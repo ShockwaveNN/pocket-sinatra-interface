@@ -1,10 +1,16 @@
 # Change log
 
 ## unreleased (master)
+
+### Changes
+
 * Reverse sort articles list, better for pocket order
 * Change config file from `app/config.yaml` to `app/config.yml`
+* Allow CI failures on `ruby-head`
+* Drop rubies older than 2.5 in CI, since them EOLed
 
 ### Fixes
+
 * Do not crash if list of links contain unsafe data
 
 ## 0.2
