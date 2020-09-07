@@ -3,7 +3,7 @@ GEM
   specs:
     ast (2.4.1)
     childprocess (4.0.0)
-    codecov (0.2.9)
+    codecov (0.2.10)
       json
       simplecov
     diff-lcs (1.3)
