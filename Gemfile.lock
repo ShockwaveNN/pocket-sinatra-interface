@@ -28,7 +28,7 @@ GEM
     parallel (1.20.1)
     parser (3.0.0.0)
       ast (~> 2.4.1)
-    pocket-ruby (0.2.0)
+    pocket-ruby (0.3.0)
       faraday (>= 0.7)
       faraday_middleware
       multi_json (~> 1.0, >= 1.0.3)
