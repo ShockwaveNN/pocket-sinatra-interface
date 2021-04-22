@@ -29,3 +29,9 @@ jobs:
       uses: codecov/codecov-action@v1
       with:
         file: ./coverage/.resultset.json
+  dockerfile:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: build default dockerfile
+      run: docker build .
