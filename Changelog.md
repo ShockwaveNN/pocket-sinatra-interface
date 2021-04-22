@@ -2,6 +2,10 @@
 
 ## unreleased (master)
 
+### New Features
+
+* Add dependabot config for gems and Dockerfile
+
 ### Changes
 
 * Reverse sort articles list, better for pocket order
