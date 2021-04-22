@@ -8,6 +8,7 @@
 * Add docker build stage to CI
 * Add `markdownlint` support in CI and fix issues
 * Add `ruby-3.0` in Ci
+* Use `puma` as default server
 
 ### Changes
 

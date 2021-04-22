@@ -26,6 +26,7 @@ GEM
     multipart-post (2.1.1)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
+    nio4r (2.5.7)
     overcommit (0.57.0)
       childprocess (>= 0.6.3, < 5)
       iniparse (~> 1.4)
@@ -36,6 +37,8 @@ GEM
       faraday (>= 1.0)
       faraday_middleware
       multi_json (~> 1.0, >= 1.0.3)
+    puma (5.2.2)
+      nio4r (~> 2.0)
     rack (2.2.3)
     rack-protection (2.1.0)
       rack
@@ -100,6 +103,7 @@ DEPENDENCIES
   haml
   overcommit
   pocket-ruby (>= 0.0.5)
+  puma
   rack-test
   rake
   rspec
@@ -108,4 +112,4 @@ DEPENDENCIES
   sinatra-contrib
 
 BUNDLED WITH
-   2.1.4
+   2.2.15
