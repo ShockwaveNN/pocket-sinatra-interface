@@ -5,6 +5,7 @@
 ### New Features
 
 * Add dependabot config for gems and Dockerfile
+* Add docker build stage to CI
 
 ### Changes
 
@@ -16,6 +17,7 @@
 ### Fixes
 
 * Do not crash if list of links contain unsafe data
+* Fix errors in Dockerfile
 
 ## 0.2
 * Add warning if not logged-in
