@@ -7,13 +7,14 @@
 * Add dependabot config for gems and Dockerfile
 * Add docker build stage to CI
 * Add `markdownlint` support in CI and fix issues
+* Add `ruby-3.0` in Ci
 
 ### Changes
 
 * Reverse sort articles list, better for pocket order
 * Change config file from `app/config.yaml` to `app/config.yml`
 * Allow CI failures on `ruby-head`
-* Drop rubies older than 2.5 in CI, since them EOLed
+* Drop rubies older than 2.6 in CI, since them EOLed
 
 ### Fixes
 
