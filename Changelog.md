@@ -6,6 +6,7 @@
 
 * Add dependabot config for gems and Dockerfile
 * Add docker build stage to CI
+* Add `markdownlint` support in CI and fix issues
 
 ### Changes
 
@@ -20,10 +21,12 @@
 * Fix errors in Dockerfile
 
 ## 0.2
+
 * Add warning if not logged-in
 * Add changelog
 * Correctly show error if uploaded file was not correct JSON
 * Fix problem with parsing json with BOM symbol
 
 ## 0.1
+
 * initial release
