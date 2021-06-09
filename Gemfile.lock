@@ -2,7 +2,7 @@ GEM
   remote: http://rubygems.org/
   specs:
     ast (2.4.2)
-    childprocess (4.0.0)
+    childprocess (4.1.0)
     codecov (0.5.2)
       simplecov (>= 0.15, < 0.22)
     diff-lcs (1.4.4)
