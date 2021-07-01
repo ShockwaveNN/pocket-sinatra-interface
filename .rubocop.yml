@@ -1,5 +1,16 @@
+require:
+    - rubocop-performance
+    - rubocop-rake
+    - rubocop-rspec
+
 inherit_from: .rubocop_todo.yml
 
 AllCops:
   NewCops: enable
 
+# Cannot describe class for sinatra app
+# Since in this configuration - not using
+# creating specific class for application
+RSpec/DescribeClass:
+  Exclude:
+    - 'spec/app_spec.rb'
