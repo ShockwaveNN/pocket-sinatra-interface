@@ -18,9 +18,3 @@ RSpec/DescribeClass:
 RSpec/ExampleWording:
   Exclude:
     - 'spec/app_spec.rb'
-
-# Offense count: 1
-# Cop supports --auto-correct.
-Style/StringConcatenation:
-  Exclude:
-    - 'app/server.rb'
