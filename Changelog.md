@@ -9,6 +9,9 @@
 * Add `markdownlint` support in CI and fix issues
 * Add `ruby-3.0` in Ci
 * Use `puma` as default server
+* Add `rubocop-performance` support
+* Add `rubocop-rake` support
+* Add `rubocop-rspec` support
 
 ### Changes
 
