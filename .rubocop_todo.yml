@@ -24,11 +24,3 @@ RSpec/ExampleWording:
 Style/StringConcatenation:
   Exclude:
     - 'app/server.rb'
-
-# Offense count: 3
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle, ConsistentQuotesInMultiline.
-# SupportedStyles: single_quotes, double_quotes
-Style/StringLiterals:
-  Exclude:
-    - 'Gemfile'
