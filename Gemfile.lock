@@ -26,7 +26,7 @@ GEM
     faraday-patron (1.0.0)
     faraday_middleware (1.0.0)
       faraday (~> 1.0)
-    haml (5.2.1)
+    haml (5.2.2)
       temple (>= 0.8.0)
       tilt
     iniparse (1.5.0)
