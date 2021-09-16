@@ -112,7 +112,7 @@ GEM
       tilt (~> 2.0)
     temple (0.8.2)
     tilt (2.0.10)
-    unicode-display_width (2.0.0)
+    unicode-display_width (2.1.0)
 
 PLATFORMS
   ruby
