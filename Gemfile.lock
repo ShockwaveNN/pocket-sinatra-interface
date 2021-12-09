@@ -42,7 +42,7 @@ GEM
       iniparse (~> 1.4)
       rexml (~> 3.2)
     parallel (1.21.0)
-    parser (3.0.3.1)
+    parser (3.0.3.2)
       ast (~> 2.4.1)
     pocket-ruby (0.5.0)
       faraday (>= 1.0)
