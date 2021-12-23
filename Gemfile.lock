@@ -5,7 +5,7 @@ GEM
     childprocess (4.1.0)
     codecov (0.6.0)
       simplecov (>= 0.15, < 0.22)
-    diff-lcs (1.4.4)
+    diff-lcs (1.5.0)
     docile (1.4.0)
     faraday (1.8.0)
       faraday-em_http (~> 1.0)
