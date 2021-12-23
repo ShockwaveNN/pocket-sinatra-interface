@@ -89,9 +89,7 @@ end
 post '/upload' do
   client = Pocket.client(access_token: session[:access_token])
   filename = "app/uploads/#{params['myfile'][:filename]}"
-  File.open(filename, 'w') do |f|
-    f.write(params['myfile'][:tempfile].read)
-  end
+  File.write(filename, params['myfile'][:tempfile].read)
   begin
     json_content = JSON.parse(File.read(filename, encoding: 'bom|utf-8'))
   rescue JSON::ParserError
