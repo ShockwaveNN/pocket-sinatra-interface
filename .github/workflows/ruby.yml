@@ -35,6 +35,8 @@ jobs:
       uses: codecov/codecov-action@v1
       with:
         file: ./coverage/.resultset.json
+    - name: Check that code 100% documented
+      run: yardoc . | grep -q '100.00% documented'    
   dockerfile:
     runs-on: ubuntu-latest
     steps:
