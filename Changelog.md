@@ -13,6 +13,7 @@
 * Add `rubocop-rake` support
 * Add `rubocop-rspec` support
 * Add `rubocop` check in CI
+* Add CI check that 100% code is documented
 
 ### Changes
 
@@ -20,6 +21,7 @@
 * Change config file from `app/config.yaml` to `app/config.yml`
 * Allow CI failures on `ruby-head`
 * Drop rubies older than 2.6 in CI, since them EOLed
+* Add missing documentation
 
 ### Fixes
 

@@ -10,6 +10,7 @@ require_relative 'helpers/application_helper'
 
 enable :sessions
 
+# @return [String] url for callback
 def callback_url
   "#{request.base_url}/oauth/callback"
 end
