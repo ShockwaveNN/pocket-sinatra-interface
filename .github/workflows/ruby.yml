@@ -25,9 +25,10 @@ jobs:
     - name: Build and test with Rake
       run: |
         gem install bundler
-        bundle config set without 'development'
         bundle install --jobs 4 --retry 3
         bundle exec rake
+    - name: Check code style with rubocop
+      run: rubocop
     - name: Output codecov report
       run: cat ./coverage/.resultset.json
     - name: Send test coverage report to codecov.io

@@ -12,6 +12,7 @@
 * Add `rubocop-performance` support
 * Add `rubocop-rake` support
 * Add `rubocop-rspec` support
+* Add `rubocop` check in CI
 
 ### Changes
 
