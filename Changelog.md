@@ -7,7 +7,8 @@
 * Add dependabot config for gems and Dockerfile
 * Add docker build stage to CI
 * Add `markdownlint` support in CI and fix issues
-* Add `ruby-3.0` in Ci
+* Add `ruby-3.0` in CI
+* Add `ruby-3.1` in CI
 * Use `puma` as default server
 * Add `rubocop-performance` support
 * Add `rubocop-rake` support
