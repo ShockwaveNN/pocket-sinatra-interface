@@ -47,4 +47,4 @@ jobs:
       run: |
         docker run -d --name=pocket-sinatra-interface pocket-sinatra-interface
         sleep 30 # wait for init
-        docker exec -it pocket-sinatra-interface true
+        docker exec pocket-sinatra-interface true
