@@ -23,6 +23,7 @@
 * Allow CI failures on `ruby-head`
 * Drop rubies older than 2.6 in CI, since them EOLed
 * Add missing documentation
+* Use `alpine` as base image
 
 ### Fixes
 
