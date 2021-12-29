@@ -2,6 +2,7 @@ FROM ruby:3.1.0-alpine
 
 LABEL maintainer="shockwavenn@gmail.com"
 
+RUN apk add build-base
 COPY . /root/pocket-sinatra-interface
 WORKDIR /root/pocket-sinatra-interface
 RUN gem install bundler
