@@ -42,4 +42,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: build default dockerfile
-      run: docker build .
+      run: docker build . --tag pocket-sinatra-interface
+    - name: Check that docker image can be startup
+      run: |
+        docker run -d --name=pocket-sinatra-interface pocket-sinatra-interface
+        sleep 30 # wait for init
+        docker exec pocket-sinatra-interface true
