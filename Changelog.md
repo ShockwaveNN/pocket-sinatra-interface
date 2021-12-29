@@ -14,6 +14,7 @@
 * Add `rubocop-rspec` support
 * Add `rubocop` check in CI
 * Add CI check that 100% code is documented
+* Add check to CI that container is started successfully
 
 ### Changes
 
