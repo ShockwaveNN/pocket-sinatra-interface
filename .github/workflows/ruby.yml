@@ -45,6 +45,6 @@ jobs:
       run: docker build . --tag pocket-sinatra-interface
     - name: Check that docker image can be startup
       run: |
-        docker run -dt --name=pocket-sinatra-interface pocket-sinatra-interface
+        docker run -itd --name=pocket-sinatra-interface pocket-sinatra-interface
         sleep 30 # wait for init
         docker exec -it pocket-sinatra-interface true
