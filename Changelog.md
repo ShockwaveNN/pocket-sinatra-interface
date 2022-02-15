@@ -26,6 +26,7 @@
 * Drop rubies older than 2.6 in CI, since them EOLed
 * Add missing documentation
 * Use `alpine` as base image
+* Check `dependabot` at 8:00 Moscow time daily
 
 ### Fixes
 
