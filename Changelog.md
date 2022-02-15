@@ -31,6 +31,7 @@
 * Do not crash if list of links contain unsafe data
 * Fix errors in Dockerfile
 * Fix Dockerfile warning about usage of `bundle install --without`
+* Fix `markdownlint` failure because of old `nodejs` in CI
 
 ## 0.2
 
