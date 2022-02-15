@@ -12,41 +12,34 @@ jobs:
           - ruby: head
             allow-failures: true
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v1
-      with:
-        node-version: '16'
-    - name: Check markdown files using `markdownlint`
-      run: |
-        npm install -g markdownlint-cli
-        markdownlint *.md
-    - name: Set up Ruby ${{ matrix.ruby }}
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: ${{ matrix.ruby }}
-    - name: Build and test with Rake
-      run: |
-        gem install bundler
-        bundle install --jobs 4 --retry 3
-        bundle exec rake
-    - name: Check code style with rubocop
-      run: rubocop
-    - name: Output codecov report
-      run: cat ./coverage/.resultset.json
-    - name: Send test coverage report to codecov.io
-      uses: codecov/codecov-action@v1
-      with:
-        file: ./coverage/.resultset.json
-    - name: Check that code 100% documented
-      run: yardoc . | grep -q '100.00% documented'    
+      - uses: actions/checkout@v2
+      - name: Set up Ruby ${{ matrix.ruby }}
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby }}
+      - name: Build and test with Rake
+        run: |
+          gem install bundler
+          bundle install --jobs 4 --retry 3
+          bundle exec rake
+      - name: Check code style with rubocop
+        run: rubocop
+      - name: Output codecov report
+        run: cat ./coverage/.resultset.json
+      - name: Send test coverage report to codecov.io
+        uses: codecov/codecov-action@v1
+        with:
+          file: ./coverage/.resultset.json
+      - name: Check that code 100% documented
+        run: yardoc . | grep -q '100.00% documented'
   dockerfile:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: build default dockerfile
-      run: docker build . --tag pocket-sinatra-interface
-    - name: Check that docker image can be startup
-      run: |
-        docker run -d --name=pocket-sinatra-interface pocket-sinatra-interface
-        sleep 30 # wait for init
-        docker exec pocket-sinatra-interface true
+      - uses: actions/checkout@v2
+      - name: build default dockerfile
+        run: docker build . --tag pocket-sinatra-interface
+      - name: Check that docker image can be startup
+        run: |
+          docker run -d --name=pocket-sinatra-interface pocket-sinatra-interface
+          sleep 30 # wait for init
+          docker exec pocket-sinatra-interface true
