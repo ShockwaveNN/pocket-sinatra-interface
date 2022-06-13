@@ -37,7 +37,7 @@ GEM
       tilt
     iniparse (1.5.0)
     multi_json (1.15.0)
-    multipart-post (2.2.2)
+    multipart-post (2.2.3)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
     nio4r (2.5.8)
