@@ -39,7 +39,7 @@ GEM
     json (2.6.2)
     multi_json (1.15.0)
     multipart-post (2.2.3)
-    mustermann (1.1.1)
+    mustermann (1.1.2)
       ruby2_keywords (~> 0.0.1)
     nio4r (2.5.8)
     overcommit (0.59.1)
