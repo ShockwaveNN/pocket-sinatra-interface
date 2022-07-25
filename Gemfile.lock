@@ -116,7 +116,7 @@ GEM
       sinatra (= 2.2.1)
       tilt (~> 2.0)
     temple (0.8.2)
-    tilt (2.0.10)
+    tilt (2.0.11)
     unicode-display_width (2.2.0)
     webrick (1.7.0)
     yard (0.9.28)
