@@ -32,8 +32,9 @@ GEM
     faraday-retry (1.0.3)
     faraday_middleware (1.2.0)
       faraday (~> 1.0)
-    haml (5.2.2)
-      temple (>= 0.8.0)
+    haml (6.0.0)
+      temple (>= 0.8.2)
+      thor
       tilt
     iniparse (1.5.0)
     json (2.6.2)
@@ -116,6 +117,7 @@ GEM
       sinatra (= 2.2.2)
       tilt (~> 2.0)
     temple (0.8.2)
+    thor (1.2.1)
     tilt (2.0.11)
     unicode-display_width (2.3.0)
     webrick (1.7.0)
