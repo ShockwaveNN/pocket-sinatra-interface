@@ -32,7 +32,7 @@ GEM
     faraday-retry (1.0.3)
     faraday_middleware (1.2.0)
       faraday (~> 1.0)
-    haml (6.0.4)
+    haml (6.0.5)
       temple (>= 0.8.2)
       thor
       tilt
