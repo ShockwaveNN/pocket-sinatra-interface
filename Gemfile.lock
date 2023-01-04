@@ -119,7 +119,7 @@ GEM
     temple (0.9.1)
     thor (1.2.1)
     tilt (2.0.11)
-    unicode-display_width (2.3.0)
+    unicode-display_width (2.4.1)
     webrick (1.7.0)
     yard (0.9.28)
       webrick (~> 1.7.0)
