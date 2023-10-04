@@ -32,7 +32,7 @@ GEM
     faraday-retry (1.0.3)
     faraday_middleware (1.2.0)
       faraday (~> 1.0)
-    haml (6.1.1)
+    haml (6.2.3)
       temple (>= 0.8.2)
       thor
       tilt
@@ -128,7 +128,7 @@ GEM
       tilt (~> 2.0)
     temple (0.10.2)
     thor (1.2.2)
-    tilt (2.2.0)
+    tilt (2.3.0)
     unicode-display_width (2.4.2)
     yard (0.9.34)
 
